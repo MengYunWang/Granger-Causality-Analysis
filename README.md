@@ -94,7 +94,7 @@ Use the ‘pwcausal’ function to estimate the GC values.
 
 
 ### Nonparametric analysis: 
-use ´compute_allnpCGCvar3´ function (it has alreday including all the following procedures)
+use ´compute_allnpCGCvar3´ function (it has alreday included all the following procedures)
 
 ### (2) Compute Spectral matrix
 
