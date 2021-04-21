@@ -89,6 +89,7 @@ Use the ‘armorf’ function to estimate the errors and compute the GC using �
 Time segments ranging from as little as 50 ms to 100ms to 300-400ms up to 1s or 2 s (P. 377, Mike 2014).
 
 **Frequency domain:**
+Use the ‘pwcausal’ function to estimate the GC values.
 
 
 ### Nonparametric method:
