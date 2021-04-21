@@ -93,17 +93,20 @@ Time segments ranging from as little as 50 ms to 100ms to 300-400ms up to 1s or 
 Use the ‘pwcausal’ function to estimate the GC values.
 
 
-### Nonparametric analysis:
+### Nonparametric analysis: 
+use ´compute_allnpCGCvar3´ function (it has alreday including all the following procedures)
 
 ### (2) Compute Spectral matrix
 
-Using mutitaper analysis, frequency domain
+Use mutitaper analysis (‘sig2mTspect_nv’ function), frequency domain
 
 Wavelet transform, time-frequency domain
 
 ### (3) Spectral matrix factorization------KEY
 
-Using Wilson’s algorithm
+Use Wilson’s algorithm (‘wilson_sf’ function)
 
 ### (4) Compute the GC values
+
+Use the ‘hz2cgcAll’ function to estimate the GC values.
 
