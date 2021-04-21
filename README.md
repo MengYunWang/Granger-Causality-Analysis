@@ -93,9 +93,9 @@ Time segments ranging from as little as 50 ms to 100ms to 300-400ms up to 1s or 
 Use the ‘pwcausal’ function to estimate the GC values.
 
 
-### Nonparametric method:
+### Nonparametric analysis:
 
-### (2) compute Spectral matrix
+### (2) Compute Spectral matrix
 
 Using mutitaper analysis, frequency domain
 
