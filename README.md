@@ -10,47 +10,47 @@ Total power = intrinsic power + causal power
 
 ## History:
 
-**1956**, Norbert Wiener proposed the notion that one variable or time series could be called causal to another if the ability to predict the second variable is improved by incorporating information about the first.
+**1956**, ***Norbert Wiener*** proposed the notion that one variable or time series could be called causal to another if the ability to predict the second variable is improved by incorporating information about the first.
 
 _Wiener, N., 1956. The theory of prediction. In: Becknbach. E. (Ed.), Modern Mathematics for Engineers. McGraw-Hill, New York._
 
-**1969**, the econometrician Clive Granger implement this idea in the context of linear autoregressive models of stochastic processes.
+**1969**, the econometrician ***Clive Granger*** implement this idea in the context of linear autoregressive models of stochastic processes.
 
 _Granger, C. W. (1969). Investigating causal relations by econometric models and cross-spectral methods.** Econometrica: Journal of the Econometric Society**, 424-438._
 
-**1982/4**, John Geweke developed a spectral decomposition of WGC, where the total time-domain WGC is equal to the sum of spectral WGC components over all frequencies from zero to the Nyquist frequency.
+**1982/4**, ***John Geweke*** developed a spectral decomposition of WGC, where the total time-domain WGC is equal to the sum of spectral WGC components over all frequencies from zero to the Nyquist frequency.
 
-_Geweke, J. (1982). Measurement of linear dependence and feedback between multiple time series. **Journal of the American statistical association**, 77(378), 304-313._
+_Geweke, J. (1982). Measurement of linear dependence and feedback between multiple time series. Journal of the American statistical association, 77(378), 304-313._
 
-_Geweke, J. (1984). Measures of conditional linear dependence and feedback between time series. **Journal of the American Statistical Association**, 79(388), 907-915._
+_Geweke, J. (1984). Measures of conditional linear dependence and feedback between time series. Journal of the American Statistical Association, 79(388), 907-915._
 
 Autoregressive modeling, the basis of the current parametric Granger causality techniques, has proven effective for data modeled by low-order AR processes. However, AR methods sometimes fail to capture complex spectral features in data that require higher order AR models. Additionally, the proper determination of model order remains a concern, although this concern may be mitigated by the recently proposed Bayesian framework.
 
 **2008**, the author proposed **a nonparametric approach** based on widely used Fourier and wavelet transforms to estimate both pairwise and conditional measures of Granger causality, eliminating the need of explicit autoregressive data modeling.
 
-_Dhamala, M., Rangarajan, G., & Ding, M. (2008). Analyzing information flow in brain networks with nonparametric Granger causality. **Neuroimage**, 41(2), 354-362._
+_Dhamala, M., Rangarajan, G., & Ding, M. (2008). Analyzing information flow in brain networks with nonparametric Granger causality. Neuroimage, 41(2), 354-362._
 
-_Dhamala, M., Liang, H., Bressler, S. L., & Ding, M. (2018). Granger-Geweke causality: Estimation and interpretation. **NeuroImage**, 175, 460-463. **[MATLAB CODE]**_
+_Dhamala, M., Liang, H., Bressler, S. L., & Ding, M. (2018). Granger-Geweke causality: Estimation and interpretation. NeuroImage, 175, 460-463. **[MATLAB CODE]**_
 
 **2008**, a Matlab toolbox was developed for granger causality at time domain.
 
-_Cui, J., Xu, L., Bressler, S. L., Ding, M., & Liang, H. (2008). BSMART: a Matlab/C toolbox for analysis of multichannel neural time series. **Neural Networks**, 21(8), 1094-1104. [function: armorf]_
+_Cui, J., Xu, L., Bressler, S. L., Ding, M., & Liang, H. (2008). BSMART: a Matlab/C toolbox for analysis of multichannel neural time series. Neural Networks, 21(8), 1094-1104. [function: armorf]_
 
 **2010**, another MATLAB toolbox for GC analysis was released. [GCCA]
 
-_Seth, A. K. (2010). A MATLAB toolbox for Granger causal connectivity analysis. **Journal of neuroscience methods**, 186(2), 262-273._
+_Seth, A. K. (2010). A MATLAB toolbox for Granger causal connectivity analysis. Journal of neuroscience methods, 186(2), 262-273._
 
 **2014**, the 2010 version toolbox was updated to MVGC.
 
-_Barnett, L., & Seth, A. K. (2014). The MVGC multivariate Granger causality toolbox: a new approach to Granger-causal inference. **Journal of neuroscience methods**, 223, 50-68._
+_Barnett, L., & Seth, A. K. (2014). The MVGC multivariate Granger causality toolbox: a new approach to Granger-causal inference. Journal of neuroscience methods, 223, 50-68._
 
 **Several reviews about GC:**
 
-_Bressler, S. L., & Seth, A. K. (2011). Wiener–Granger causality: a well established methodology. **Neuroimage**, 58(2), 323-329._
+_Bressler, S. L., & Seth, A. K. (2011). Wiener–Granger causality: a well established methodology. Neuroimage, 58(2), 323-329._
 
-_Friston, K., Moran, R., & Seth, A. K. (2013). Analysing connectivity with Granger causality and dynamic causal modelling. **Current opinion in neurobiology**, 23(2), 172-178._
+_Friston, K., Moran, R., & Seth, A. K. (2013). Analysing connectivity with Granger causality and dynamic causal modelling. Current opinion in neurobiology, 23(2), 172-178._
 
-_Seth, A. K., Barrett, A. B., & Barnett, L. (2015). Granger causality analysis in neuroscience and neuroimaging.** Journal of Neuroscience**, 35(8), 3293-3297._
+_Seth, A. K., Barrett, A. B., & Barnett, L. (2015). Granger causality analysis in neuroscience and neuroimaging. Journal of Neuroscience, 35(8), 3293-3297._
 
 ## Analytic methods:
 
