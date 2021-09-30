@@ -102,7 +102,7 @@ Time segments ranging from as little as ***50 ms to 100ms to 300-400ms up to 1s 
 
 - Wavelet transform, time-frequency domain
 
-### (3) Spectral matrix factorization------KEY
+### (3) Spectral matrix factorization------KEY PROCEDURE
 
 - Use Wilson’s algorithm (‘***wilson_sf***’ function)
 
