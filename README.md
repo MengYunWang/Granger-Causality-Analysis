@@ -14,7 +14,7 @@ Total power = intrinsic power + causal power
 
 _Wiener, N., 1956. The theory of prediction. In: Becknbach. E. (Ed.), Modern Mathematics for Engineers. McGraw-Hill, New York._
 
-**1969**, the econometrician ***Clive Granger*** implement this idea in the context of linear autoregressive models of stochastic processes.
+- **1969**, the econometrician ***Clive Granger*** implement this idea in the context of linear autoregressive models of stochastic processes.
 
 _Granger, C. W. (1969). Investigating causal relations by econometric models and cross-spectral methods. Econometrica: Journal of the Econometric Society, 424-438._
 
@@ -44,7 +44,7 @@ _Seth, A. K. (2010). A MATLAB toolbox for Granger causal connectivity analysis. 
 
 _Barnett, L., & Seth, A. K. (2014). The MVGC multivariate Granger causality toolbox: a new approach to Granger-causal inference. Journal of neuroscience methods, 223, 50-68._
 
-**Several reviews about GC:**
+- **Several reviews about GC:**
 
 _Bressler, S. L., & Seth, A. K. (2011). Wiener–Granger causality: a well established methodology. Neuroimage, 58(2), 323-329._
 
@@ -58,17 +58,17 @@ In general, sampling rates between 250 Hz and 1000 Hz will be appropriate.
 
 ### (1) Preprocessing:
 
-Subtract the ERP and ensemble mean; detrend and z-score the data
-
-Check the data, make sure it is stationary. KPSS test or ADF test
+- Subtract the ERP and ensemble mean
+- Detrend and z-score the data
+- Check the data, make sure it is stationary (_KPSS test or ADF test_)
 
 ### Parametric analysis:
 
 ### (2) Model order
 
-Use the ‘_armorf _’ function in BSMART toolbox to estimate the best order.
+- Use the ‘***armorf***’ function in BSMART toolbox to estimate the best order.
 
-Use BIC (recommended, ‘LWR’ or ‘OLS’ mode) and AIC to determine the suitable order.
+- Use ***BIC (recommended, ‘LWR’ or ‘OLS’ mode) and AIC*** to determine the suitable order.
 
 _Models with a small order have fewer parameters to estimate, which means that the estimation of those parameters (e.g., via the Matlab function armorf.m) will be more robust to noise. On the other hand, models with a small order are insensitive to longer time lags and thus may fail to detect true interactions that have a long temporal lag._
 
@@ -80,33 +80,33 @@ _Models with a larger order are sensitive to longer time lags and will allow you
 
 ### (3) Main procedure
 
-Confirm the order is the best by executing these three tests: whiteness, consistency and stability tests.
+Confirm the order is the best by executing these three tests: ***whiteness, consistency and stability tests***.
 
 **Time domain:**
 
-Use the ‘armorf’ function to estimate the errors and compute the GC using ‘ln’ function.
+- Use the ‘***armorf***’ function to estimate the errors and compute the GC using ‘ln’ function.
 
-Time segments ranging from as little as 50 ms to 100ms to 300-400ms up to 1s or 2 s (P. 377, Mike 2014).
+Time segments ranging from as little as ***50 ms to 100ms to 300-400ms up to 1s or 2 s*** (P. 377, Mike 2014).
 
 **Frequency domain:**
 
-Use the ‘pwcausal’ function to estimate the GC values.
+- Use the ‘***pwcausal***’ function to estimate the GC values.
 
 
 ### Nonparametric analysis: 
-use ´compute_allnpCGCvar3´ function (it has alreday included all the following procedures)
+- Use ´***compute_allnpCGCvar3***´ function (NOTICE: it has alreday included all the following procedures)
 
 ### (2) Compute Spectral matrix
 
-Use mutitaper analysis (‘sig2mTspect_nv’ function), frequency domain
+- Use mutitaper analysis (‘***sig2mTspect_nv***’ function), frequency domain
 
-Wavelet transform, time-frequency domain
+- Wavelet transform, time-frequency domain
 
 ### (3) Spectral matrix factorization------KEY
 
-Use Wilson’s algorithm (‘wilson_sf’ function)
+- Use Wilson’s algorithm (‘***wilson_sf***’ function)
 
 ### (4) Compute the GC values
 
-Use the ‘hz2cgcAll’ function to estimate the GC values.
+- Use the ‘***hz2cgcAll***’ function to estimate the GC values.
 
